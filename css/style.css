@@ -68,6 +68,10 @@ a {
   font-size: 0.975rem;
   letter-spacing: 1.65px;
 }
+
+.menu-lista li a:hover {
+  color: #e54;
+}
 /* barra de navegação */
 
 .animais h2 {
@@ -115,6 +119,27 @@ a {
   background: #faf6ed;
 }
 
+/* animação com js */
+.js .js-tabcontent section {
+  display: none;
+}
+
+.js-tabcontent section.ativo {
+  display: block !important;
+  animation: show 0.8s forwards;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-35px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
 .animais-descricao {
   grid-column: 3;
 }
@@ -122,6 +147,7 @@ a {
 .animais-descricao {
   margin-bottom: 3rem;
 }
+
 /* Animais Fantásticos - 01  */
 
 .faq-lista {
@@ -136,6 +162,7 @@ a {
   color: #e54;
   font-weight: bold;
   font-size: 1.175rem;
+  cursor: pointer;
 }
 
 .faq-lista dt::before {
@@ -153,7 +180,43 @@ a {
   margin-left: 30px;
 }
 
-/* FAQ LISTA */
+/* accordion */
+.js .js-accordion dd {
+  display: none;
+}
+
+.js-accordion dt::after {
+  content: "▲";
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.js-accordion dt.ativo::after {
+  content: "▼";
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.js-.js-accordion dd.ativo {
+  display: block !important;
+  animation: ver 0.7s forwards;
+}
+
+.js .js-accordion dd.ativo {
+  display: block !important;
+  animation: slideDown 0.6s forwards;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translate3d(0, -20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+} /* FAQ LISTA */
 
 .mapa {
   grid-column: 2;

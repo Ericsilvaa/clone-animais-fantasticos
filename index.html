@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='pt-br'>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>document.documentElement.className += ' js'</script>
     <link rel="stylesheet" href="./css/style.css">
     <title>Animais Fantásticos</title>
 </head>
@@ -19,7 +20,7 @@
 
     <section class="grid-section animais" id="animais">
         <h1 class="titulo">Animais Fantásticos </h1>
-        <ul class="animais-lista">
+        <ul class="animais-lista js-tabmenu">
             <li><img src="./img/imagem1.jpg" alt=""></li>
             <li><img src="./img/imagem2.jpg" alt=""></li>
             <li><img src="./img/imagem3.jpg" alt=""></li>
@@ -28,14 +29,11 @@
             <li><img src="./img/imagem6.jpg" alt=""></li>
         </ul>
         
-        <div class="animais-descricao">
+        <div class="animais-descricao js-tabcontent">
             <section>
                 <h2>raposa</h2>
                 <p> são pequenos a médios mamíferos onívoros pertencentes a vários gêneros 
                 da família Canidae. </p>
-                <p> As raposas têm o crânio achatado, orelhas triangulares verticais, 
-                focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.
-                </p>
                 <p>Na natureza, a expectativa de vida típica de uma raposa é de um a três anos,
                  embora os indivíduos possam viver até dez anos. Ao contrário de muitos canídeos, 
                  as raposas nem sempre são animais de carga.</p>
@@ -43,11 +41,6 @@
 
             <section>
                 <h2 class="titulo-secundario">esquilo</h2>
-                <p> são pequenos a médios mamíferos onívoros pertencentes a vários gêneros 
-                da família Canidae. </p>
-                <p> As raposas têm o crânio achatado, orelhas triangulares verticais, 
-                focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.
-                </p>
                 <p>Na natureza, a expectativa de vida típica de uma raposa é de um a três anos,
                  embora os indivíduos possam viver até dez anos. Ao contrário de muitos canídeos, 
                  as raposas nem sempre são animais de carga.</p>
@@ -69,21 +62,10 @@
                 <h2  class="titulo-secundario">lobo</h2>
                 <p> são pequenos a médios mamíferos onívoros pertencentes a vários gêneros 
                 da família Canidae. </p>
-                <p> As raposas têm o crânio achatado, orelhas triangulares verticais, 
-                focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.
-                </p>
-                <p>Na natureza, a expectativa de vida típica de uma raposa é de um a três anos,
-                 embora os indivíduos possam viver até dez anos. Ao contrário de muitos canídeos, 
-                 as raposas nem sempre são animais de carga.</p>
             </section>
 
             <section>
                 <h2  class="titulo-secundario">macaco</h2>
-                <p> são pequenos a médios mamíferos onívoros pertencentes a vários gêneros 
-                da família Canidae. </p>
-                <p> As raposas têm o crânio achatado, orelhas triangulares verticais, 
-                focinho pontiagudo e ligeiramente arrebitado e uma cauda longa e espessa.
-                </p>
                 <p>Na natureza, a expectativa de vida típica de uma raposa é de um a três anos,
                  embora os indivíduos possam viver até dez anos. Ao contrário de muitos canídeos, 
                  as raposas nem sempre são animais de carga.</p>
@@ -107,7 +89,7 @@
 
     <section class="grid-section faq" id="faq">
         <h1  class="titulo">FAQ</h1>
-        <dl class="faq-lista"> <!-- Lista de Perguntas e Respostas // Lista de Definição  -->
+        <dl class="faq-lista js-accordion"> <!-- Lista de Perguntas e Respostas // Lista de Definição  -->
             <dt>Qual a idade dos animais?</dt> <!-- Termo que você vai definir - ou seja- a pergunta definida  -->
             <dd>Raposas são onívoras. Sua dieta é composta principalmente de invertebrados, 
                 como insetos, e pequenos vertebrados, como répteis e pássaros. Eles também podem 
