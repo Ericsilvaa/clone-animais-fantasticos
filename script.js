@@ -41,3 +41,6 @@ function initAccordion() {
     }
 }
 initAccordion();
+function name(params) {
+  
+}
