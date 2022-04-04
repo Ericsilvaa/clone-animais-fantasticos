@@ -102,6 +102,7 @@ a {
   height: 370px;
   overflow-y: scroll;
   grid-column: 2;
+  cursor: pointer;
 }
 
 /* Barra de Scroll da Lista - Scrollbar/ Scrollbar-thumb /scrollbar-track */
