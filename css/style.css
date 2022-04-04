@@ -299,3 +299,17 @@ a {
   }
 }
 /* AREA CONTATO */
+
+
+
+
+.js .js-scroll {
+  opacity: 0;
+  transition: .3s;
+  transform:translate3d(-20px,0,0);
+}
+
+.js .js-scroll.ativo {
+  opacity: 1;
+
+}
